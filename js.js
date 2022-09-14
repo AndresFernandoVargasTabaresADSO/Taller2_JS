@@ -1,8 +1,15 @@
-window.addEventListener("DOMContentLoaded",()=>{
-    // 1. Escribir un programa que sume, reste, multiplique y divida dos números
-    let num = Number(prompt("Escribe un numero", 2))
-    let num2 = Number(prompt("Escribe un segundo numero", 2))
+addEventListener("DOMContentLoaded",()=>{
+    console.log(`21. Se requiere calcular la distancia entre dos puntos, realizar el código que permita hallar la solución,
+    por favor utilizar funciones matemáticas de Python para ello
+    d = rc((x2-x1)^2 + (y2-y1)^2)`)
 
-    console.log(`1. Escribir un programa que sume, reste, multiplique y divida dos números`)
-    console.log(`El resultado: ${num} + ${num2} es ${num + num2}`)
+
+    let x1= Number(prompt(`Ingresa valor x1: `))
+    let x2= Number(prompt(`Ingresa valor x2: `))
+    let y1= Number(prompt(`Ingresa el valor y1: `))
+    let y2= Number(prompt(`Ingresa el valor y2: `))
+
+    let solucion= (((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)))
+
+    console.log(`Valor de distancia: ${solucion}`)
 })
